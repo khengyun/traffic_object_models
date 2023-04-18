@@ -28,8 +28,8 @@
       </visual>
 
       <visual name="red">
-        <pose>-0.001123 -0.082251 -0.402 0 0 0</pose>
-        <!-- <pose>-0.001123 -0.082251 -0.147514 0 0 0</pose> -->
+        <!-- <pose>-0.001123 -0.082251 -0.402 0 0 0</pose> -->
+        <pose>-0.001123 -0.082251 -0.147514 0 0 0</pose>
         <geometry>
           <sphere>
             <radius>0.1012</radius>
@@ -44,7 +44,7 @@
           <ambient>1 0 0 1</ambient>
           <specular>1 0 0 1</specular>
           <!-- Turn a light on by uncommenting emissive -->
-          <emissive>1 0 0 1</emissive>
+          <!-- <emissive>1 0 0 1</emissive> -->
         </material>
       </visual>
 
@@ -68,8 +68,8 @@
       </visual>
 
       <visual name="green">
-        <pose>-0.001123 -0.082251 -0.402 0 0 0</pose>
-        <!-- <pose>-0.001123 -0.082251 -0.655 0 0 0</pose> -->
+        <!-- <pose>-0.001123 -0.082251 -0.402 0 0 0</pose> -->
+        <pose>-0.001123 -0.082251 -0.655 0 0 0</pose>
 
         <geometry>
           <sphere>
@@ -86,8 +86,13 @@
           <specular>0 1 0 1</specular>
           <!--emissive>0 1 0 1</emissive-->
         </material>
+        <plugin name="emissive_plugin" filename="libemissive_plugin.so"/>
+        <update_rate>5.0</update_rate>
       </visual>
 
     </link>
+
+
+    
   </model>
 </sdf>
