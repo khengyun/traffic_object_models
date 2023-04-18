@@ -88,7 +88,7 @@
         </material>
         <plugin name="emissive_plugin" filename="libemissive_plugin.so"/>
         <update_rate>5.0</update_rate>
-      </visual>
+      </visual> 
 
     </link>
 
